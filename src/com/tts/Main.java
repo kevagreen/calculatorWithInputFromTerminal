@@ -42,32 +42,32 @@ public class Main {
                 System.out.println("Enter two numbers");
                 numOne = input.nextLong();
                 numTwo = input.nextLong();
-                System.out.println("Your numbers multiplied equals " + mainCalculator.divide(numOne, numTwo));
+                System.out.println("Your numbers divided equals " + mainCalculator.divide(numOne, numTwo));
                 break;
             case "!":
                 System.out.println("Enter a number greater than 20");
                 numOne = input.nextLong();
-                System.out.println("The factorial of you number is " + magicCalculator.factorial((int) numOne));
+                System.out.println("The factorial of your number is " + magicCalculator.factorial((int) numOne));
                 break;
             case "2":
                 System.out.println("Enter one number to square");
                 numOne = input.nextLong();
-                System.out.println("Your numbers multiplied equals " + mainCalculator.square(numOne));
+                System.out.println("Your number squared equals " + mainCalculator.square(numOne));
                 break;
             case "s":
                 System.out.println("Enter one number");
                 numOne = input.nextLong();
-                System.out.println("The sine of you number is " + magicCalculator.sine(numOne));
+                System.out.println("The sine of your number is " + magicCalculator.sine(numOne));
                 break;
             case "c":
                 System.out.println("Enter one number");
                 numOne = input.nextLong();
-                System.out.println("The sine of you number is " + magicCalculator.cosine(numOne));
+                System.out.println("The cosine of your number is " + magicCalculator.cosine(numOne));
                 break;
             case "t":
                 System.out.println("Enter one number");
                 numOne = input.nextLong();
-                System.out.println("The sine of you number is " + magicCalculator.tangent(numOne));
+                System.out.println("The tangent of your number is " + magicCalculator.tangent(numOne));
                 break;
         }
     }
