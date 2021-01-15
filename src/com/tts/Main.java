@@ -10,13 +10,12 @@ public class Main {
     private static final Calculator mainCalculator = new Calculator();
     private static final MagicCalculator magicCalculator = new MagicCalculator();
 
-    public static void main(String[] args) {
-        print();
-    }
+    public static void main(String[] args) { print(); }
 
     public static void print() {
         String operator;
-        System.out.println("Select an operator +,-,*,/, !, enter 2 to square a number, enter t for tangent, enter s to get the sine, or enter c to get cosine");
+        System.out.println("Select an operator +,-,*,/, !, enter 2 to square a number, enter t for tangent, enter s to get the sine, enter c to get cosine");
+        System.out.println(", p to get the pi to the nth power, or enter a to get absolute value");
         operator = input.next();
 
         switch (operator) {
@@ -68,6 +67,16 @@ public class Main {
                 System.out.println("Enter one number");
                 numOne = input.nextLong();
                 System.out.println("The tangent of your number is " + magicCalculator.tangent(numOne));
+                break;
+            case "p":
+            System.out.println("Enter one number");
+            numOne = input.nextLong();
+            System.out.println("pi raised to the power of " + (int)numOne + " is " + magicCalculator.getPi(numOne));
+            break;
+            case "a":
+                System.out.println("Enter a negative number");
+                numOne = input.nextDouble();
+                System.out.println("The absolute value of your number is " + magicCalculator.absolute(numOne));
                 break;
         }
     }

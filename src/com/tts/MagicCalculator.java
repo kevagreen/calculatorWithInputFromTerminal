@@ -35,4 +35,9 @@ public class MagicCalculator extends Calculator {
         return result;
     }
 
+    //pi
+    public double getPi(double num){ return num = Math.pow(Math.PI, num); }
+
+    //absolute value
+    public double absolute(double num){ return  num = Math.abs(num); }
 }
